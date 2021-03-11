@@ -1,0 +1,7 @@
+# ninja log v6
+0	5	1615447584030000000	app/javascript/home/myHome.ast	fb32d6e14ae19d63
+0	5	1615447584030000000	Fullstack.cmi	254e6702509b2bb9
+5	7	1615447584030000000	app/javascript/home/myHome.d	d3e5ddbead58c81a
+7	13	1615447584040000000	app/javascript/home/myHome-Fullstack.cmj	6d8e1b8f91899596
+7	13	1615447584040000000	app/javascript/home/myHome-Fullstack.cmi	6d8e1b8f91899596
+7	13	1615447584040000000	../../app/javascript/home/myHome.bs.js	6d8e1b8f91899596

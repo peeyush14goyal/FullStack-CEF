@@ -1,12 +1,6 @@
 import "stylesheets/application";
-
-let homeIndexPage = () => {
-  console.log("Hello Home PAge");
-};
-
-let menusIndexpage = () => {
-  console.log("Hello to menus!");
-};
+import { homeIndexPage } from "../home/homeIndexPage";
+import { menusIndexPage, showDate } from "../menus/menusIndexPage";
 
 window.homeIndexPage = homeIndexPage;
-window.menusIndexpage = menusIndexpage;
+window.menusIndexPage = menusIndexPage;

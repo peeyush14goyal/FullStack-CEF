@@ -1,0 +1,17 @@
+rescript = 1
+rule astj
+  command = /home/peeyush/fullstack/node_modules/bs-platform/linux/bsc.exe  -bs-v 9.0.1 -bs-super-errors -absname -bs-ast -o $out $i
+o app/javascript/home/myHome.ast : astj ../../app/javascript/home/myHome.res
+rule deps
+  command = /home/peeyush/fullstack/node_modules/bs-platform/linux/bsb_helper.exe -hash 0eff8b580f191d9de604ed7a3a103157 -bs-ns Fullstack $in
+  restat = 1
+o app/javascript/home/myHome.d : deps app/javascript/home/myHome.ast
+rule mij
+  command = /home/peeyush/fullstack/node_modules/bs-platform/linux/bsc.exe -bs-ns Fullstack -I . -I app/javascript/home -I app/javascript/menus -I app/javascript/channels -I app/javascript/packs -I app/javascript/stylesheets -I app/javascript -bs-super-errors  -bs-package-name fullstack -bs-package-output es6:$in_d:.bs.js $i
+  dyndep = 1
+  restat = 1
+o app/javascript/home/myHome-Fullstack.cmj app/javascript/home/myHome-Fullstack.cmi ../../app/javascript/home/myHome.bs.js : mij app/javascript/home/myHome.ast
+rule build_package
+  command = /home/peeyush/fullstack/node_modules/bs-platform/linux/bsc.exe -w -49 -color always -no-alias-deps  $i
+  restat = 1
+o Fullstack.cmi : build_package Fullstack.mlmap
