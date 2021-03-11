@@ -3,11 +3,11 @@ rule cp
   command = cp $i $out
 rule touch
  command = touch $out
-o myHome-Fullstack.cmi : cp ../bs/app/javascript/home/myHome-Fullstack.cmi
-o myHome-Fullstack.cmj : cp ../bs/app/javascript/home/myHome-Fullstack.cmj
-o myHome-Fullstack.cmt : cp ../bs/app/javascript/home/myHome-Fullstack.cmt
-o myHome.res : cp ../../app/javascript/home/myHome.res
+o HomeIndexPage-Fullstack.cmi : cp ../bs/app/javascript/home/HomeIndexPage-Fullstack.cmi
+o HomeIndexPage-Fullstack.cmj : cp ../bs/app/javascript/home/HomeIndexPage-Fullstack.cmj
+o HomeIndexPage-Fullstack.cmt : cp ../bs/app/javascript/home/HomeIndexPage-Fullstack.cmt
+o HomeIndexPage.res : cp ../../app/javascript/home/HomeIndexPage.res
 o Fullstack.cmi : cp ../bs/Fullstack.cmi
 o Fullstack.cmj : cp ../bs/Fullstack.cmj
 o Fullstack.cmt : cp ../bs/Fullstack.cmt
-build install.stamp : touch myHome-Fullstack.cmi myHome-Fullstack.cmj Fullstack.cmi Fullstack.cmj
+build install.stamp : touch HomeIndexPage-Fullstack.cmi HomeIndexPage-Fullstack.cmj Fullstack.cmi Fullstack.cmj

@@ -1,1 +1,1 @@
-{ "dirs" : [ "app/javascript" , "app/javascript/stylesheets" , "app/javascript/packs" , "app/javascript/channels" , "app/javascript/menus" , "app/javascript/home" ] , "pkgs" : [] , "generated" : [] }
+{ "dirs" : [ "app/javascript" , "app/javascript/stylesheets" , "app/javascript/packs" , "app/javascript/channels" , "app/javascript/menus" , "app/javascript/home" ] , "pkgs" : [ [ "@rescript/react" , "/home/peeyush/fullstack/node_modules/@rescript/react" ] ] , "generated" : [] }

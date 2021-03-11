@@ -1,5 +1,5 @@
 import "stylesheets/application";
-import { homeIndexPage } from "../home/homeIndexPage";
+import * as homeIndexPage from "../home/HomeIndexPage.bs";
 import { menusIndexPage, showDate } from "../menus/menusIndexPage";
 
 window.homeIndexPage = homeIndexPage;
